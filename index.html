@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <div class="options">
+      <div class="modes">
+        <p>Game Modes:</p>
+        <button class="btn-1vs1">1 vs 1</button>
+        <button class="btn-ai">Against AI</button>
+      </div>
+    </div>
+    <div class="info">
+      <div class="current">
+        <p class="score"></p>
+        <p class="round"></p>
+        <p class="status"></p>
+      </div>
+      <div class="past">
+        <table class="table">
+          <thead>
+            <tr class="table-title">
+              <th>Round</th>
+              <th>Winner</th>
+            </tr>
+          </thead>
+          <tbody class="table-content"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="game-container">
+      <div class="board"></div>
+    </div>
+    <button class="btn-restart">Restart Round</button>
+    <button class="btn-new-game">Start New Game</button>
+    <button class="btn-back">Go Back</button>
+    <button class="btn-next">Next Round</button>
+  </body>
+</html>

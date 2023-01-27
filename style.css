@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.game-container {
+  display: grid;
+  height: auto;
+  width: auto;
+  margin-top: 10vh;
+}
+
+.board {
+  border: 3px solid black;
+  justify-self: center;
+  align-self: center;
+  height: min(70vh, 80vw);
+  width: min(70vh, 80vw);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.square,
+.square-free {
+  border: 1px solid black;
+  font-size: 9rem;
+  text-align: center;
+  align-content: center;
+}
+
+.square-free:hover {
+  cursor: pointer;
+}
