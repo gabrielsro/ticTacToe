@@ -6,9 +6,6 @@
 
 .game-container {
   display: grid;
-  height: auto;
-  width: auto;
-  margin-top: 10vh;
 }
 
 .board {
@@ -25,11 +22,15 @@
 .square,
 .square-free {
   border: 1px solid black;
-  font-size: 9rem;
-  text-align: center;
-  align-content: center;
+  display: grid;
 }
 
 .square-free:hover {
   cursor: pointer;
+}
+
+.square-content {
+  align-self: center;
+  justify-self: center;
+  font-size: 3rem;
 }

@@ -28,7 +28,10 @@ const gameboard = (() => {
         if (enabled) {
           if (squares[e.target.dataset.x][e.target.dataset.y] == "") {
             squares[e.target.dataset.x][e.target.dataset.y] = mark;
-            square.innerText = mark;
+            let squareContent = document.createElement("p");
+            squareContent.classList.add("square-content");
+            squareContent.innerText = mark;
+            square.appendChild(squareContent);
             square.classList.toggle("square-free");
             mark == "X" ? (mark = "O") : (mark = "X");
             gameControl.evaluate(squares);
